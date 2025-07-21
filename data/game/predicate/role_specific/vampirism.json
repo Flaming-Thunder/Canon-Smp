@@ -1,0 +1,27 @@
+{
+  "condition": "all_of",
+  "terms": [
+    {
+      "condition": "entity_properties",
+      "entity": "this",
+      "predicate": {
+        "location": {
+          "can_see_sky": true
+        }
+      }
+    },
+    {
+      "condition": "any_of",
+      "terms": [
+        {
+          "condition": "weather_check",
+          "raining": false
+        },
+        {
+          "condition": "weather_check",
+          "thundering": false
+        }
+      ]
+    }
+  ]
+}

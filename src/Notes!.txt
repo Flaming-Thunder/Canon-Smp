@@ -1,0 +1,54 @@
+
+
+
+
+
+
+--------------------------------------- Runes ---------------------------------------
+
+Rune of Spite
+  - all Players in 25 'including self' blocks will:
+    - Take 4 hearts of damage
+    - Regeneration  will turn into   Poison
+    - Strength      will turn into   Weakness
+    - Speed         will turn into   Slowness
+
+Spell Rune [ Inferno ]
+  - Take 3 hearts from User
+  - Shoot a Wave of Fire
+
+Spell Rune [ Construction ]
+  - Build a Wall Using the User's Offhand Block
+
+Rune of Life
+  - all Players in 50 blocks 'including self' will:
+    - Heal 4 hearts
+    - Poison        will turn into   Regeneration
+    - Weakness      will turn into   Strength
+    - Slowness      will turn into   Speed
+
+Rune of Depths
+  - Gives Haste          2 for 30 seconds
+  - Gives Night Vision   2 for 30 seconds
+  - Gives Slowness       1 for  2 minutes
+  - Gives Weakness       1 for  2 minutes
+
+Rune of Cowardance
+  - Does NOT Work While Rune of Courage is in Effect
+  - Lasts 2 minutes
+
+  - Creates a 2 block thick wall of smooth basalt surrounding the User
+  - Gives Invisibility for 10 seconds
+  - Gives Haste 1 for 20 seconds
+  - Gives Speed 1 for 20 seconds
+  - Heals 1 heart
+
+Rune of Courage
+  - While Rune of Cowardance is in Effect it will Take 5 Hearts from the User and Destroy The Box
+  - Gives all Players in range Strength 2 for 30 seconds
+  - Gives Glowing for 5 minutes
+
+Rune of Chaos
+  - Gives User 1 Good and Bad Effect
+    - if the Effects Clash no Effect will be given [ Slowness, Speed || Haste, Mining Fatigue ]
+  - Spawns 1 Random Mob

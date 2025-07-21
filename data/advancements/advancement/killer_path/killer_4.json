@@ -1,0 +1,26 @@
+{
+  "parent": "advancements:killer_path/killer_3",
+  "criteria": {
+    "use": {
+      "trigger": "impossible"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "frame": "goal",
+    "icon": {
+      "id": "diamond_sword"
+    },
+
+    "description": [{"text": ""},
+      {
+        "text": "Kill a 25 Players in Total"
+      }
+    ],
+    "title": [{"text": ""},
+      {
+        "text": "Murderer.."
+      }
+    ]
+  }
+}

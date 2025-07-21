@@ -1,0 +1,2 @@
+$summon item_display ~ ~ ~ {Tags:["Magic.CraftAnimation","Magic.new"],item:$(item),teleport_duration:1,transformation:{left_rotation:[0,0,0,1],right_rotation:[0,0,0,1],scale:[0.5,0.5,0.5],translation:[0,0,0]}}
+execute as @e[type=item_display,tag=Magic.new] run function game:system/tick/craft/internal1

@@ -1,0 +1,40 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "cookie",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "item_model": "beetroot",
+                "item_name": "Life Token",
+                "rarity": "uncommon",
+                
+                "enchantment_glint_override": true,
+                "max_stack_size": 10,
+                
+                "custom_data": {
+                  "Data": {
+                    "Custom_Item": "Life Token"
+                  }
+                },
+                
+                "consumable": {
+                  "animation": "bow",
+                  "consume_seconds": 1.5,
+                  "has_consume_particles": false,
+                  "sound": "block.beacon.activate"
+                },
+                "!food": {}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

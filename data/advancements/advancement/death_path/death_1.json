@@ -1,0 +1,27 @@
+{
+  "parent": "advancements:root",
+  "criteria": {
+    "use": {
+      "trigger": "impossible"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "frame": "challenge",
+
+    "icon": {
+      "id": "skeleton_skull"
+    },
+
+    "description": [{"text": ""},
+      {
+        "text": "Die for the first time!"
+      }
+    ],
+    "title": [{"text": ""},
+      {
+        "text": "Ouch!"
+      }
+    ]
+  }
+}

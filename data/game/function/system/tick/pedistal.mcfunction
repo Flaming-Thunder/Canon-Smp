@@ -1,0 +1,11 @@
+execute on passengers if entity @s[type=item_display] run data modify storage game:math temp.item set from entity @s item
+execute on passengers if entity @s[type=item_display] store result score .haveItem Game.Math if data entity @s item
+execute if score .haveItem Game.Math matches 0 run data remove storage game:math temp.item
+execute store result score .isAltar Game.Math if entity @s[tag=Magic.Altar]
+execute at @s run fill ~ ~ ~ ~ ~ ~ air destroy
+execute if block ~ ~-1 ~ #air run function game:system/tick/pedistal/remove
+execute unless score @s Altar.LockDelay matches 1.. on passengers if entity @s[type=interaction] run function game:system/tick/pedistal/internal0
+execute on passengers if entity @s[type=interaction] run function game:system/tick/pedistal/internal2
+execute if score @s Altar.LockDelay matches 0 if data entity @s data.loot at @s positioned ~ ~4 ~ run function game:system/tick/pedistal/craft_result with entity @s data
+execute on passengers if entity @s[type=item_display] at @s run rotate @s ~2 ~
+execute if score @s Altar.LockDelay matches 0.. run scoreboard players remove @s Altar.LockDelay 1

@@ -1,0 +1,35 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:item_frame",
+            "functions": [
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:item_name": {
+                    "text": "Basic Pedestal",
+                    "color": "#7e39af"
+                  },
+                  "minecraft:item_model": "nether_star",
+                  "custom_model_data":{"strings": ["2 Pedistal"]},
+                  "minecraft:entity_data": {
+                    "id": "item_frame",
+                    "Tags": [
+                      "Magic.Pedestal",
+                      "Magic.Basic"
+                    ],
+                    "Invisible": true,
+                    "Invulnerable": true
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

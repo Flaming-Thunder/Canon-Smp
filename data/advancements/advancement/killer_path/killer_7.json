@@ -1,0 +1,28 @@
+{
+  "parent": "advancements:killer_path/killer_6",
+  "criteria": {
+    "use": {
+      "trigger": "impossible"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "frame": "challenge",
+    "hidden": true,
+
+    "icon": {
+      "id": "netherite_sword"
+    },
+
+    "description": [{"text": ""},
+      {
+        "text": "Kill a 250 Players in Total"
+      }
+    ],
+    "title": [{"text": ""},
+      {
+        "text": "Player Hunter..."
+      }
+    ]
+  }
+}

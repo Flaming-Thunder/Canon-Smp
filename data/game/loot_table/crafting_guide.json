@@ -1,0 +1,108 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "written_book",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "item_model": "enchanted_book",
+                "rarity": "uncommon",
+                
+                "enchantment_glint_override": false,
+                "max_stack_size": 1,
+                
+                "custom_data": {
+                  "Data": {
+                    "Custom_Item": "Crafing Guide"
+                  }
+                },
+                "tooltip_display": {
+                  "hidden_components": [
+                    "written_book_content"
+                  ]
+                },
+                "written_book_content": {
+                  "author": "",
+                  "title": "Crafting Guide",
+                  "generation": 0,
+                  "pages": [
+                    [
+                      {"text":""},
+                      {
+                        "text":"\ua998\ue001\ua005\ua005",
+                        "font":"game:recipe_book",
+                        "color":"white"
+                      },
+                      {
+                        "text":"\uca00\ua999",
+                        "font":"game:recipe_book",
+                        "color":"white"
+                      },
+                      {
+                        "text":"BLANK RECIPE",
+                        "font":"game:recipe_book",
+                        "color":"white"
+                      },
+                      {
+                        "text":"\n\n\n\n\n\n\n\n"
+                      },
+                      {
+                        "text":"\ua997\ucb00\ua999",
+                        "font":"game:recipe_book",
+                        "color":"white"
+                      },
+                      {
+                        "text":"BLANK RECIPE",
+                        "font":"game:recipe_book",
+                        "color":"white"
+                      }
+                    ],
+                    [
+                      {"text":""},
+                      {
+                        "text":"\ua998\ue001\ua005\ua005",
+                        "font":"game:recipe_book",
+                        "color":"white"
+                      },
+                      {
+                        "text":"\ucb00\ua999",
+                        "font":"game:recipe_book",
+                        "color":"white"
+                      },
+                      {
+                        "text":"BLANK RECIPE",
+                        "font":"game:recipe_book",
+                        "color":"white"
+                      },
+                      {
+                        "text":"\n\n\n\n\n\n\n\n"
+                      },
+                      {
+                        "text":"\ua997\ucb00\ua999",
+                        "font":"game:recipe_book",
+                        "color":"white"
+                      },
+                      {
+                        "text":"BLANK RECIPE",
+                        "font":"game:recipe_book",
+                        "color":"white"
+                      }
+                    ]
+                  ]
+                },
+                
+                "!consumable": {},
+                "!food": {}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

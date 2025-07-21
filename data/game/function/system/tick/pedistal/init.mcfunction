@@ -1,0 +1,3 @@
+execute if entity @s[tag=Magic.Simple] align xyz unless entity @a[dx=0,dz=0,dy=0,gamemode=!spectator] positioned ~0.5 ~ ~0.5 unless entity @e[type=item_display,tag=Magic.Pedestal,distance=..0.51] run function game:system/tick/pedistal/internal3
+execute if entity @s[tag=Magic.Basic] align xyz unless entity @a[dx=0,dz=0,dy=0,gamemode=!spectator] positioned ~0.5 ~ ~0.5 unless entity @e[type=item_display,tag=Magic.Pedestal,distance=..0.51] run function game:system/tick/pedistal/internal4
+kill @s

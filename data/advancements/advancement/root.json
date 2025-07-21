@@ -1,0 +1,27 @@
+{
+  "criteria": {
+    "use": {
+      "trigger": "tick"
+    }
+  },
+  "display": {
+    "background": "block/red_nether_bricks",
+    "announce_to_chat": false,
+    "frame": "goal",
+
+    "icon": {
+      "id": "golden_helmet"
+    },
+
+    "description": [{"text": ""},
+      {
+        "text": "To New Beginnings"
+      }
+    ],
+    "title": [{"text": ""},
+      {
+        "text": "Canon SMP"
+      }
+    ]
+  }
+}

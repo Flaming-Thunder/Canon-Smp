@@ -1,0 +1,12 @@
+
+
+  {
+    "criteria": { "use_item": {
+      "trigger": "consume_item",
+      "conditions": {"item": {"predicates": {
+        "minecraft:custom_data": {"MagicRuneOfFrightening":true}
+      }}}
+    }},
+    "rewards": { "function": "game:system/tick/rune/frightening" }
+  }
+  

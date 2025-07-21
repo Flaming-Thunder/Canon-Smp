@@ -1,0 +1,15 @@
+{ 
+    "function": "set_damage",
+    "damage":{
+        "type": "score",
+        "score": "Game.Math",
+        "target": {
+            "type": "fixed",
+            "name": ".damage"
+        },
+        "scale": 0.0002461235540241201
+        
+    }
+}
+
+

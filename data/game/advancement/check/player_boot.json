@@ -1,0 +1,10 @@
+{
+  "criteria": {
+    "use": {
+      "trigger": "tick"
+    }
+  },
+  "rewards": {
+    "function": "game:system/load/player_id"
+  }
+}

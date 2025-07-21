@@ -1,0 +1,37 @@
+{
+  "parent": "advancements:death_path/death_1",
+  "criteria": {
+    "use": {
+      "trigger": "impossible"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "frame": "goal",
+
+    "icon": {
+      "id": "player_head",
+      "components": {
+        "profile": {
+          "properties":[
+            {
+            "name": "textures",
+            "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2MxOGFmYzYxYWEwMTRhMDIxMzljNjI2ZjM4ZGM2MTg0ZWIzZjM4YzQ1YzcyNTNjY2E1ZDA1NTZhMmYzMGI5NiJ9fX0="
+            }
+          ]
+        }
+      }
+    },
+
+    "description": [{"text": ""},
+      {
+        "text": "Lose 5 Lives!"
+      }
+    ],
+    "title": [{"text": ""},
+      {
+        "text": "That's Gotta Hurt..."
+      }
+    ]
+  }
+}

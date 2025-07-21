@@ -1,0 +1,36 @@
+{
+  "parent": "advancements:death_path/vampire",
+  "criteria": {
+    "use": {
+      "trigger": "impossible"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "frame": "goal",
+
+    "icon": {
+      "id": "player_head",
+      "components": {
+        "profile": {
+          "properties":[
+            {
+            "name":"textures","value":"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzNmN2NjZjYxZGJjM2Y5ZmU5YTYzMzNjZGUwYzBlMTQzOTllYjJlZWE3MWQzNGNmMjIzYjNhY2UyMjA1MSJ9fX0="
+            }
+          ]
+        }
+      }
+    },
+
+    "description": [{"text": ""},
+      {
+        "text": "Become Aquaphobic Through Debuffs"
+      }
+    ],
+    "title": [{"text": ""},
+      {
+        "text": "Is Water Acidic?"
+      }
+    ]
+  }
+}

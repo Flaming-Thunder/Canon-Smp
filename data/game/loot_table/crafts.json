@@ -1,0 +1,66 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:barrier",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                  "custom_data": {
+
+
+
+
+                  "crafts":[
+                      {
+                          "result_table":"minecraft:chests/igloo_chest",
+                          "pedistals":[
+                              {"item":{"id":"minecraft:stick"}},
+                              {"item":{"id":"minecraft:stone"}}
+                          ],
+                          "tier":{"basic":3},
+                          "catalyst":{"id":"minecraft:gold_ingot","components":{"minecraft:custom_data":{"catalyst":true}}},
+                          
+                          "recipe":[0,0,1,0,0,1,0]
+                      },
+                      {
+                          "result_table":"minecraft:archaeology/desert_pyramid",
+                          "pedistals":[
+                              {"item":{"id":"minecraft:stick"}},
+                              {}
+                          ],
+                          "tier":{},
+                          "catalyst":{"id":"minecraft:gold_ingot","components":{"minecraft:custom_data":{"catalyst":true}}},
+                          
+                          "recipe":[0,0,0,0,1]
+                      },
+                      {
+                          "result_table":"minecraft:blocks/acacia_button",
+                          "pedistals":[
+                              {"item":{"id":"minecraft:stick"}},
+                              {"item":{"id":"minecraft:stone"}}
+                          ],
+                          "tier":{},
+                          "catalyst":{"id":"minecraft:gold_ingot","components":{"minecraft:custom_data":{"catalyst":true}}},
+                          
+                          "shapeless":true,
+                          "recipe":[0,1,1,1]
+                      }
+
+
+
+
+                  ]
+                }            
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

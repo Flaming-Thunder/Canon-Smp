@@ -1,0 +1,40 @@
+{
+  "values": [
+    "#stairs",
+    "#slabs",
+    "#trapdoors",
+    "#rails",
+    "#walls",
+    "#fences",
+    "#fence_gates",
+    "#buttons",
+    "#pressure_plates",
+    "#all_signs",
+    "#candles",
+    
+    "chest",
+    "trapped_chest",
+    "ender_chest",
+
+    "sculk_sensor",
+    "sculk_shrieker",
+    "calibrated_sculk_sensor",
+    "sculk_vein",
+
+    "#coral_plants",
+    "small_dripleaf",
+    "big_dripleaf",
+    "big_dripleaf_stem",
+
+    "iron_bars",
+    "#game:glass_panes",
+
+    "ladder",
+    "lightning_rod",
+    "end_rod",
+    "chain",
+    "sea_pickle",
+    "glow_lichen",
+    "hanging_roots"
+  ]
+}

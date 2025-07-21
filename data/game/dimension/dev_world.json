@@ -1,0 +1,16 @@
+{
+  "type": "game:dev_world",
+  "generator": {
+    "type": "minecraft:flat",
+    "settings": {
+      "biome": "game:dev_world",
+      "lakes": false,
+      "features": false,
+      "layers": [
+        { "block": "minecraft:bedrock", "height": 1 },
+        { "block": "minecraft:gray_concrete", "height": 163 }
+      ],
+      "structure_overrides": []
+    }
+  }
+}

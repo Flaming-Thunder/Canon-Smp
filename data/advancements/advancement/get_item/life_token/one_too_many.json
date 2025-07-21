@@ -1,0 +1,48 @@
+{
+  "parent": "advancements:get_item/life_token/classic",
+  "criteria": {
+    "use": {
+      "trigger": "inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "count": 10,
+            "components": {
+              "custom_data": {
+                "Data": {
+                  "Custom_Item": "Life Token"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "frame": "task",
+
+    "icon": {
+      "id": "beetroot",
+      "components": {
+        "custom_data": {
+          "Data": {
+            "Custom_Item": "Group of Life Tokens"
+          }
+        }
+      }
+    },
+
+    "description": [{"text": ""},
+      {
+        "text": "Have 10 Life Tokens"
+      }
+    ],
+    "title": [{"text": ""},
+      {
+        "text": "One Too Many"
+      }
+    ]
+  }
+}

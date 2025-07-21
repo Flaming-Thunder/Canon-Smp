@@ -1,0 +1,12 @@
+
+
+  {
+    "criteria": { "use_item": {
+      "trigger": "using_item",
+      "conditions": {"item": {"predicates": {
+        "minecraft:custom_data": {"MagicRuneSpellConstruction":true}
+      }}}
+    }},
+    "rewards": { "function": "game:system/tick/rune/spell_construction" }
+  }
+  

@@ -1,0 +1,27 @@
+{
+  "parent": "advancements:root",
+  "criteria": {
+    "use": {
+      "trigger": "impossible"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "frame": "task",
+
+    "icon": {
+      "id": "wooden_sword"
+    },
+
+    "description": [{"text": ""},
+      {
+        "text": "Kill a fellow Player"
+      }
+    ],
+    "title": [{"text": ""},
+      {
+        "text": "Accidental Click"
+      }
+    ]
+  }
+}

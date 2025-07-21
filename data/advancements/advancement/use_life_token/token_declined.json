@@ -1,0 +1,35 @@
+{
+  "parent": "advancements:use_life_token/classic",
+  "criteria": {
+    "use": {
+      "trigger": "impossible"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "frame": "task",
+
+    "icon": {
+      "id": "beetroot",
+      "components": {
+        "custom_data": {
+          "Data": {
+            "Custom_Item": "Iron Life Token"
+          }
+        },
+        "enchantment_glint_override": true
+      }
+    },
+
+    "description": [{"text": ""},
+      {
+        "text": "Use a Life Token while at 10 Lives"
+      }
+    ],
+    "title": [{"text": ""},
+      {
+        "text": "Token Declined!"
+      }
+    ]
+  }
+}

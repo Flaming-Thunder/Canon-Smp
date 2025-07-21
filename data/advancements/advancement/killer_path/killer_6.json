@@ -1,0 +1,27 @@
+{
+  "parent": "advancements:killer_path/killer_5",
+  "criteria": {
+    "use": {
+      "trigger": "impossible"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "frame": "goal",
+
+    "icon": {
+      "id": "diamond_axe"
+    },
+
+    "description": [{"text": ""},
+      {
+        "text": "Kill a 100 Players in Total"
+      }
+    ],
+    "title": [{"text": ""},
+      {
+        "text": "Blood Stained"
+      }
+    ]
+  }
+}

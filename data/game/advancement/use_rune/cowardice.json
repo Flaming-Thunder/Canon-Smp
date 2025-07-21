@@ -1,0 +1,12 @@
+
+
+  {
+    "criteria": { "use_item": {
+      "trigger": "consume_item",
+      "conditions": {"item": {"predicates": {
+        "minecraft:custom_data": {"MagicRuneOfCowardice":true}
+      }}}
+    }},
+    "rewards": { "function": "game:system/tick/rune/cowardice" }
+  }
+  

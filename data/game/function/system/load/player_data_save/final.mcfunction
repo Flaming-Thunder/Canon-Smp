@@ -1,0 +1,1 @@
+$data modify storage game:player data[$(id)] set from storage game:player myData

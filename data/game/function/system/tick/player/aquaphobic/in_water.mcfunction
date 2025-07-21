@@ -1,0 +1,1 @@
+damage @s 1 on_fire

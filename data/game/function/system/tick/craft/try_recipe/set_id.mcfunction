@@ -1,0 +1,6 @@
+execute if data storage game:math temp.array[0].pedistals[0].support at @s as @e[type=item_display,tag=Magic.Pedestal,distance=..10] unless score @s Altar.CraftID matches -1.. run function game:system/tick/craft/try_recipe/set_id/check_support with storage game:math temp.array[0].pedistals[0]
+execute unless data storage game:math temp.array[0].pedistals[0].support at @s as @e[type=item_display,tag=Magic.Pedestal,distance=..10] unless score @s Altar.CraftID matches -1.. run function game:system/tick/craft/try_recipe/set_id/check_classic with storage game:math temp.array[0].pedistals[0]
+execute unless data storage game:math temp.array[0].pedistals[0].item at @s as @e[type=item_display,tag=Magic.Pedestal,distance=..10] unless score @s Altar.CraftID matches -1.. on passengers if entity @s[type=item_display] unless data entity @s item on vehicle run scoreboard players operation @s Altar.CraftID = count.CraftID Game.Math
+scoreboard players add count.CraftID Game.Math 1
+data remove storage game:math temp.array[0].pedistals[0]
+execute if data storage game:math temp.array[0].pedistals[0] run function game:system/tick/craft/try_recipe/set_id

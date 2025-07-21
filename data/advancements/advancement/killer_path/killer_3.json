@@ -1,0 +1,27 @@
+{
+  "parent": "advancements:killer_path/killer_2",
+  "criteria": {
+    "use": {
+      "trigger": "impossible"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "frame": "task",
+
+    "icon": {
+      "id": "iron_sword"
+    },
+
+    "description": [{"text": ""},
+      {
+        "text": "Kill a 10 Players in Total"
+      }
+    ],
+    "title": [{"text": ""},
+      {
+        "text": "Killer..."
+      }
+    ]
+  }
+}

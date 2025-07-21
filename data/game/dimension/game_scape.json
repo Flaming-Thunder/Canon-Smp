@@ -1,0 +1,16 @@
+{
+  "type": "game:dev_world",
+  "generator": {
+    "type": "minecraft:flat",
+    "settings": {
+      "biome": "game:dev_world",
+      "lakes": false,
+      "features": false,
+      "layers": [
+        { "block": "minecraft:air", "height": 164 },
+        { "block": "minecraft:barrier", "height": 1 }
+      ],
+      "structure_overrides": []
+    }
+  }
+}

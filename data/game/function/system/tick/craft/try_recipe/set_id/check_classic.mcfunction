@@ -1,0 +1,1 @@
+$execute on passengers if entity @s[type=item_display,nbt={item:$(item)}] on vehicle run scoreboard players operation @s Altar.CraftID = count.CraftID Game.Math

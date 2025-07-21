@@ -1,0 +1,12 @@
+
+
+  {
+    "criteria": { "use_item": {
+      "trigger": "consume_item",
+      "conditions": {"item": {"predicates": {
+        "minecraft:custom_data": {"MagicRuneOfChaos":true}
+      }}}
+    }},
+    "rewards": { "function": "game:system/tick/rune/chaos" }
+  }
+  

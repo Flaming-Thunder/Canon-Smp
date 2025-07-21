@@ -1,0 +1,34 @@
+{
+  "parent": "advancements:use_life_token/classic",
+  "criteria": {
+    "use": {
+      "trigger": "impossible"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "frame": "task",
+
+    "icon": {
+      "id": "beetroot",
+      "components": {
+        "custom_data": {
+          "Data": {
+            "Custom_Item": "Decayed Life Token"
+          }
+        }
+      }
+    },
+
+    "description": [{"text": ""},
+      {
+        "text": "Use a Life Token while Undead!"
+      }
+    ],
+    "title": [{"text": ""},
+      {
+        "text": "From The Grave!"
+      }
+    ]
+  }
+}

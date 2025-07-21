@@ -1,0 +1,3 @@
+execute if entity @s[tag=Magic.Simple] positioned ~ ~1 ~ on passengers if entity @s[type=item_display] run function game:system/tick/pedistal/drop_item/macro with entity @s
+execute if entity @s[tag=Magic.Basic,tag=Magic.Altar] positioned ~ ~1 ~ on passengers if entity @s[type=item_display] run function game:system/tick/pedistal/drop_item/macro with entity @s
+execute if entity @s[tag=Magic.Basic,tag=!Magic.Altar] positioned ~ ~1.5 ~ on passengers if entity @s[type=item_display] run function game:system/tick/pedistal/drop_item/macro with entity @s
