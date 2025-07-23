@@ -4,5 +4,5 @@ execute if entity @s[tag=Magic.Frightened] run data remove storage game:player m
 execute if entity @s[tag=Magic.Frightened] run tag @s remove Magic.Frightened
 execute if entity @s[tag=Magic.Frightener] run data remove storage game:player myData.effects.Frightener
 execute if entity @s[tag=Magic.Frightener] run tag @s remove Magic.Frightener
-execute if data storage game:data {Data:{Event:{CanonEvent:3b}}} run function game:system/tick/internal3
+execute if data storage game:data {Data:{Event:{CanonEvent:3b}}} run function game:system/tick/internal4
 scoreboard players set @s Check.Player.Died 0

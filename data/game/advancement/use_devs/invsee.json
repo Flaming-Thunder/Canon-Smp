@@ -1,0 +1,13 @@
+
+
+  {
+    "criteria": { "use_item": {
+      "trigger": "consume_item",
+      "conditions": {"item": {"predicates": {
+        "minecraft:custom_data": {"Invsee":true}
+      }}}
+    }},
+    "rewards": { "function": "game:system/tick/dev_tool/invsee" }
+  }
+
+  

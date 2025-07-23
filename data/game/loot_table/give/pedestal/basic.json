@@ -17,6 +17,7 @@
                   "minecraft:item_model": "nether_star",
                   "custom_model_data":{"strings": ["2 Pedistal"]},
                   "minecraft:entity_data": {
+                    "Silent": true,
                     "id": "item_frame",
                     "Tags": [
                       "Magic.Pedestal",

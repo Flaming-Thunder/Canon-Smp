@@ -3,6 +3,9 @@ execute store result score .GameTime Game.Math run time query gametime
 execute if entity @s[tag=Magic.Coward] run function game:system/tick/internal0
 execute if entity @s[tag=Magic.Frightened] run function game:system/tick/internal1
 execute if entity @s[tag=Magic.Frightener] run function game:system/tick/internal2
+execute unless data storage game:player myData.name run function game:system/tick/internal3
+execute if data storage game:player myData.damage if data storage game:player myData.damageWait run function game:system/tick/player/damage with storage game:player myData
+execute if data storage game:player myData.damage unless data storage game:player myData.damageWait run data modify storage game:player myData.damageWait set value true
 execute if score @s Check.Player.Died matches 1.. run function game:system/tick/player/died
 data modify storage game:player myData.LastSelectedItem set from entity @s SelectedItem
 function game:system/load/player_data_save

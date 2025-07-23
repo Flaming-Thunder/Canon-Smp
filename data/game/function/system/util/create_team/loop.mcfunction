@@ -2,7 +2,7 @@ $say $(Class).Lives.$(Life)
 $team add $(Class).Lives.$(Life)
 $execute if score Create.Teams.Lives Game.Data matches -10..-1 run team modify $(Class).Lives.$(Life) seeFriendlyInvisibles false
 $execute if score Create.Teams.Lives Game.Data matches 1..10 run team modify $(Class).Lives.$(Life) seeFriendlyInvisibles false
-$execute if score Create.Teams.Lives Game.Data matches 11 run team modify $(Class).Lives.$(Life) color yellow
+$execute if score Create.Teams.Lives Game.Data matches 11..15 run team modify $(Class).Lives.$(Life) color yellow
 $execute if score Create.Teams.Lives Game.Data matches 10 run team modify $(Class).Lives.$(Life) color white
 $execute if score Create.Teams.Lives Game.Data matches 7..9 run team modify $(Class).Lives.$(Life) color green
 $execute if score Create.Teams.Lives Game.Data matches 4..6 run team modify $(Class).Lives.$(Life) color gold

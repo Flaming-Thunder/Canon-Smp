@@ -1,0 +1,33 @@
+{
+  "spawn_range": 5,
+  "total_mobs": 10,
+  "total_mobs_added_per_player": 5,
+  "simultaneous_mobs": 3.0,
+  "simultaneous_mobs_added_per_player": 0.5,
+  "spawn_potentials": [
+    {
+      "data": {
+        "entity": {
+          "id": "minecraft:zombie"
+        },
+        "custom_spawn_rules": {
+          "block_light_limit": 15,
+          "sky_light_limit": 15
+        },
+        "equipment": {
+          "loot_table": "entities/armadillo",
+          "slot_drop_chances": 0
+        }
+      },
+      "weight": 1
+    }
+  ],
+  "ticks_between_spawn": 20,
+  "loot_tables_to_eject": [
+    {
+      "weight": 100,
+      "data": "game:give/altar/simple"
+    }
+  ]
+  
+}

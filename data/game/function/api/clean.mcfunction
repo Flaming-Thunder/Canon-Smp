@@ -12,4 +12,5 @@ scoreboard objectives remove Player.Canon_Deaths
 scoreboard objectives remove Check.Player.Using_Item
 scoreboard objectives remove Check.Player.Died
 bossbar remove game:canon_event
+function game:system/util/remove_team
 function game:system/load

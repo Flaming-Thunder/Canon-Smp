@@ -28,6 +28,18 @@
                           "recipe":[0,0,1,0,0,1,0]
                       },
                       {
+                          "result_table":"minecraft:blocks/lava_cauldron",
+                          "pedistals":[
+                              {"item":{"id":"minecraft:stick"}},
+                              {"item":{"id":"minecraft:stone"}},
+                              {"item":{"id":"minecraft:stone"},"support":"magma_block"}
+                          ],
+                          "tier":{"basic":3},
+                          "catalyst":{"id":"minecraft:gold_ingot","components":{"minecraft:custom_data":{"catalyst":true}}},
+                          
+                          "recipe":[0,0,2,2,0,1,0]
+                      },
+                      {
                           "result_table":"minecraft:archaeology/desert_pyramid",
                           "pedistals":[
                               {"item":{"id":"minecraft:stick"}},

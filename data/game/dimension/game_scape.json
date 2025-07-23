@@ -7,7 +7,7 @@
       "lakes": false,
       "features": false,
       "layers": [
-        { "block": "minecraft:air", "height": 164 },
+        { "block": "minecraft:air", "height": 163 },
         { "block": "minecraft:barrier", "height": 1 }
       ],
       "structure_overrides": []

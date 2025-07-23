@@ -53,6 +53,8 @@ scoreboard players set #-2031 Game.Math -2031
 scoreboard players set #-1 Game.Math -1
 scoreboard players set #2 Game.Math 2
 scoreboard players set #5 Game.Math 5
+scoreboard players set #20 Game.Math 20
+scoreboard players set #60 Game.Math 60
 scoreboard players set #100 Game.Math 100
 scoreboard players set #300 Game.Math 300
 scoreboard players set #500 Game.Math 500
@@ -64,10 +66,12 @@ execute if score Event.Canon Game.Timer matches ..-1 run scoreboard players set 
 scoreboard players add Event.Canon.Double_Time Game.Data 0
 scoreboard players set Event.Canon.Double_Time.Chance Game.Data 50
 scoreboard players set Altar_Craft.Delay Game.Data 100
+scoreboard players set State.SaveCooldown Game.Data 36000
 
 ##                                   - Triggers -
 
 scoreboard objectives add Dev_World trigger
+scoreboard objectives add Game_Scape trigger
 scoreboard objectives add Retrive_Life trigger
 scoreboard objectives add Check_Event_Time trigger
 
@@ -158,6 +162,8 @@ data modify storage game:math temp set value {}
 execute store result score .temp0 Game.Math run data get storage game:player data
 execute if score .temp0 Game.Math matches 30.. run data modify storage game:player data set value []
 
+execute unless data storage game:backup inventory run data modify storage game:backup inventory set value []
+
 
 
 tellraw @a[tag=Developer] [{text:"Storage Data Implemented!",color:green}]
@@ -186,6 +192,19 @@ tellraw @a[tag=Developer] [{text:"Magic System Implemented!",color:green}]
 tellraw @a[tag=Developer] [{text:"Implementing Teams..."}]
 
 function game:system/util/create_team {Class:"Default"}
+
+#                          ##===========================##
+#                          ||                           ||
+#                          ||   Generate  Game Scape    ||
+#                          ||                           ||
+#                          ##===========================##
+
+execute in game:game_scape run
+  execute positioned -14 99 -14 run place template game:game_scape/lobby
+
+
+
+
 
 /player_id
   tag @s add Game.PlayerInited

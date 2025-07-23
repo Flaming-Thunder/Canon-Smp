@@ -3,7 +3,6 @@ scoreboard players reset * Altar.CraftID
 scoreboard players set @s Altar.CraftID -1
 tag @s add Magic.CraftCenter
 execute at @s run function game:system/tick/craft/try_recipe/set_id
-execute as @e[scores={Altar.CraftID=0..}] run say test
 scoreboard players set .basic Game.Math 0
 scoreboard players set .advanced Game.Math 0
 execute if data storage game:math temp.array[0].tier.basic store result score .basic Game.Math run data get storage game:math temp.array[0].tier.basic

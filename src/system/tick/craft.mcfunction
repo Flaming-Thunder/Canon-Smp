@@ -30,7 +30,6 @@ execute if score Craft.Success Game.Math matches 0 run %FILE%/fail
   tag @s add Magic.CraftCenter
   
   execute at @s run %FILE%/try_recipe/set_id
-  execute as @e[scores={Altar.CraftID=0..}] run say test
   
   scoreboard players set .basic Game.Math 0
   scoreboard players set .advanced Game.Math 0
@@ -112,7 +111,6 @@ execute if score Craft.Success Game.Math matches 0 run %FILE%/fail
 
     /loop
       execute store result score .id Game.Math run data get storage game:math temp.recipe[0]
-      tellraw @a {score:{name:".id",objective:"Game.Math"}}
       execute as @e[type=item_display,tag=Magic.Pedestal,tag=!Magic.InCraft,tag=!Magic.CraftCenter,tag=!Magic.Altar,scores={Altar.CraftID=0..},distance=..10] if score @s Altar.CraftID = .id Game.Math run tag @s add Magic.temp
       execute unless entity @e[type=item_display,tag=Magic.temp] run return 0
       
@@ -146,7 +144,7 @@ execute if score Craft.Success Game.Math matches 0 run %FILE%/fail
 
     scoreboard players operation @s Altar.LockDelay = Altar_Craft.Delay Game.Data
     execute on passengers if entity @s[type=item_display] run data remove entity @s item
-    say delete
+
   #END
 
   playsound entity.evoker.cast_spell block @a ~ ~ ~ 0.5 1.1 0

@@ -16,6 +16,6 @@
     }
   },
   "rewards": {
-    "function": "game:system/tick/life_token/classic"
+    "function": "game:system/player/life_token/classic"
   }
 }

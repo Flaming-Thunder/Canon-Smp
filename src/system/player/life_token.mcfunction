@@ -8,14 +8,14 @@
     playsound item.shield.break ambient @a ~ ~ ~ 1 1 0
     tellraw @s [{text:"[",color:gold}, {text:"Info",color:yellow,bold:true}, {text:"]: ",color:gold}, {text:"Max Lives Reached!",color:red}]
     damage @s 10 magic
-    advancement grant @s only advancements:used_item/life_token/token_declined
+    advancement grant @s only advancements:use_life_token/token_declined
   /used
     scoreboard players add @s Player.Lives 1
     function game:api/player_update
     playsound block.beacon.power_select ambient @a ~ ~ ~ 1 1 0
     particle trial_spawner_detection ~ ~.2 ~ 0.3 0.4 0.3 0 50 normal
     particle trial_spawner_detection ~ ~ ~ 0.3 0 0.3 0 40 normal
-    advancement grant @s only advancements:used_item/life_token
+    advancement grant @s only advancements:use_life_token/classic
   /undead
     scoreboard players set @s Player.Lives 1
     function game:api/player_update
@@ -23,7 +23,7 @@
     particle trial_spawner_detection_ominous ~ ~.2 ~ 0.3 0.4 0.3 0 50 normal
     particle trial_spawner_detection_ominous ~ ~ ~ 0.3 0 0.3 0 40 normal
     particle trial_spawner_detection_ominous ~ ~ ~ 0.6 0 0.6 0 40 normal
-    advancement grant @s only advancements:used_item/life_token/from_the_grave
+    advancement grant @s only advancements:use_life_token/from_the_grave
 
   advancement revoke @s only game:use_life_token/classic
 #
@@ -32,8 +32,8 @@
 #
 #
 /golden
-  execute as @s if score @s Player.Lives matches 16.. run %FILE%/golden/supermaxxed
-  execute as @s if score @s Player.Lives matches 10..15 run %FILE%/golden/maxed
+  execute as @s if score @s Player.Lives matches 15.. run %FILE%/golden/supermaxxed
+  execute as @s if score @s Player.Lives matches 10..14 run %FILE%/golden/maxed
   execute as @s if score @s Player.Lives matches 0..9 run %FILE%/golden/used
   execute as @s if score @s Player.Lives matches ..-1 run %FILE%/golden/undead
 
@@ -48,7 +48,7 @@
     playsound block.enchantment_table.use ambient @a ~ ~ ~ 1 1 0
     particle trial_spawner_detection ~ ~.2 ~ 0.3 0.4 0.3 0 50 normal
     particle trial_spawner_detection ~ ~ ~ 0.3 0 0.3 0 40 normal
-    advancement grant @s only advancements:
+    advancement grant @s only advancements:use_life_token/golden
 
   /used
     execute as @s if score @s Player.Lives matches 9 run scoreboard players add @s Player.Lives 1

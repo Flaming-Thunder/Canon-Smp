@@ -1,4 +1,5 @@
-scoreboard players remove @s Player.Lives 1
-function game:api/player_update
-scoreboard players add Event.Canon.Deaths Game.Data 1
-scoreboard players add @s Player.Canon_Deaths 1
+forceload add 0 0
+setblock 0 0 0 chest
+loot replace block 0 0 0 container.0 loot game:player_head
+data modify storage game:player myData.name set from block 0 0 0 Items[0].components."minecraft:profile".name
+setblock 0 0 0 air

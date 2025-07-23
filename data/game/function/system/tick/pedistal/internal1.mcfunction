@@ -1,3 +1,2 @@
-data modify storage game:math temp.item2.count set value 1
-data modify entity @s item set from storage game:math temp.item2
-execute if score .isAltar Game.Math matches 1 if data storage game:math temp.item2.components."minecraft:custom_data".catalyst on vehicle run function game:system/tick/craft
+item replace entity @a[tag=Magic.Target,limit=1] weapon.mainhand from entity @s container.0
+data remove entity @s item

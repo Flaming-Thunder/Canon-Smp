@@ -20,6 +20,8 @@ scoreboard objectives remove Check.Player.Died
 
 bossbar remove game:canon_event
 
+function game:system/util/remove_team
+
 function game:system/load
 
 

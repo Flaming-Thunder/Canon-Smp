@@ -67,12 +67,12 @@ execute store result bossbar game:canon_event value run scoreboard players get E
 
 /while
   bossbar set game:canon_event players @a
-  execute as @a[advancements={game:checks/player_kill_player=true}] run %FILE%/while/player_killed_player
+  execute as @a[advancements={game:check/player_kill_player=true}] run %FILE%/while/player_killed_player
   /player_killed_player
     execute if score @s Player.Lives matches -10..-1 run scoreboard players add @s Player.Lives 1
-    execute if score @s Player.Lives matches -10..-1 run function game:system/pull/update_player
+    execute if score @s Player.Lives matches -10..-1 run function game:api/player_update
 
-    advancement revoke @s only game:checks/player_kill_player
+    advancement revoke @s only game:check/player_kill_player
 /while_not
   bossbar set game:canon_event players @s
 

@@ -1,0 +1,1 @@
+execute unless entity @s[nbt={Inventory:[[{slot:0b},{},{},{},{},{},{},{},{},{},{},{},{}]]}]

@@ -1,5 +1,5 @@
 {
-  "parent": "advancements:get_item/life_token",
+  "parent": "advancements:get_item/life_token/classic",
   "criteria": {
     "use": {
       "trigger": "impossible"

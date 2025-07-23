@@ -1,0 +1,1 @@
+execute positioned -14 99 -14 run place template game:game_scape/lobby

@@ -1,0 +1,3 @@
+execute if entity @s[tag=Magic.Altar] run particle falling_dust{block_state:"purpur_block"} ~ ~1.45 ~ 0.2 0.3 0.2 0.03 1 normal
+execute if entity @s[tag=!Magic.Altar,tag=Magic.Simple] run particle falling_dust{block_state:"purpur_block"} ~ ~1.45 ~ 0.2 0.3 0.2 0.03 1 normal
+execute if entity @s[tag=!Magic.Altar,tag=Magic.Basic] run particle falling_dust{block_state:"purpur_block"} ~ ~1.95 ~ 0.2 0.3 0.2 0.03 1 normal

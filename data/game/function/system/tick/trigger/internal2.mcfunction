@@ -1,0 +1,2 @@
+execute if function game:system/util/inventory_full run loot spawn ~ ~ ~ loot game:give/life_token/classic
+execute unless function game:system/util/inventory_full run loot give @s loot game:give/life_token/classic

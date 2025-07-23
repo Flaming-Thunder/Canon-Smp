@@ -1,0 +1,4 @@
+execute unless data entity @s item.components."minecraft:custom_model_data".strings[1] run data modify entity @s item.components."minecraft:custom_model_data".strings[1] set value "Default"
+execute unless block ~ ~ ~ #game:pedistal_support/all run data modify entity @s item.components."minecraft:custom_model_data".strings[1] set value "Default"
+execute if block ~ ~ ~ #game:pedistal_support/hot run data modify entity @s item.components."minecraft:custom_model_data".strings[1] set value "Hot"
+execute if block ~ ~ ~ #game:pedistal_support/cold run data modify entity @s item.components."minecraft:custom_model_data".strings[1] set value "Cold"
