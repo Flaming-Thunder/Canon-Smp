@@ -22,8 +22,15 @@ scoreboard objectives add Check.Player.Died deathCount
 scoreboard players set #-4063 Game.Math -4063
 scoreboard players set #-2031 Game.Math -2031
 scoreboard players set #-1 Game.Math -1
+scoreboard players set #1 Game.Math 1
 scoreboard players set #2 Game.Math 2
+scoreboard players set #3 Game.Math 3
+scoreboard players set #4 Game.Math 4
 scoreboard players set #5 Game.Math 5
+scoreboard players set #6 Game.Math 6
+scoreboard players set #7 Game.Math 7
+scoreboard players set #8 Game.Math 8
+scoreboard players set #9 Game.Math 9
 scoreboard players set #20 Game.Math 20
 scoreboard players set #60 Game.Math 60
 scoreboard players set #100 Game.Math 100
