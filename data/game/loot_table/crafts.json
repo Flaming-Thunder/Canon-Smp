@@ -18,6 +18,7 @@
                   "crafts":[
                       {
                           "result_table":"minecraft:chests/igloo_chest",
+                          "result_command":"say craft 1",
                           "pedistals":[
                               {"item":{"id":"minecraft:stick"}},
                               {"item":{"id":"minecraft:stone"}}

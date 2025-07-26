@@ -1,5 +1,6 @@
 tellraw @a[tag=Developer] [{text:"Loading Bootup..."}]
 execute unless data storage game:data {Data:{Event:{CanonEvent:0b}}} unless data storage game:data {Data:{Event:{CanonEvent:1b}}} unless data storage game:data {Data:{Event:{CanonEvent:2b}}} unless data storage game:data {Data:{Event:{CanonEvent:3b}}} run data merge storage game:data {Data:{Event:{CanonEvent:0b}}}
+kill @e[tag=Reload_Deleteable]
 kill @e[type=marker,tag=Magic.Math]
 summon marker ~ ~ ~ {Tags:["Magic.Math"]}
 forceload add 0 0
@@ -8,6 +9,7 @@ tellraw @a[tag=Developer] [{text:"Implementing Scoreboards..."}]
 scoreboard objectives add Game.Data dummy
 scoreboard objectives add Game.Math dummy
 scoreboard objectives add Game.Timer dummy
+scoreboard objectives add Game.Battle.Weight dummy
 scoreboard objectives add Altar.CraftID dummy
 scoreboard objectives add Altar.LockDelay dummy
 scoreboard objectives add Altar.Count dummy
@@ -32,6 +34,7 @@ scoreboard players set #7 Game.Math 7
 scoreboard players set #8 Game.Math 8
 scoreboard players set #9 Game.Math 9
 scoreboard players set #20 Game.Math 20
+scoreboard players set #50 Game.Math 50
 scoreboard players set #60 Game.Math 60
 scoreboard players set #100 Game.Math 100
 scoreboard players set #300 Game.Math 300
@@ -40,8 +43,12 @@ scoreboard players set #1000 Game.Math 1000
 execute if score Event.Canon Game.Timer matches ..-1 run scoreboard players set Event.Canon Game.Timer 0
 scoreboard players add Event.Canon.Double_Time Game.Data 0
 scoreboard players set Event.Canon.Double_Time.Chance Game.Data 50
-scoreboard players set Altar_Craft.Delay Game.Data 100
-scoreboard players set State.SaveCooldown Game.Data 36000
+execute unless score Altar_Craft.Delay Game.Data matches -2147483648..2147483647 run scoreboard players set Altar_Craft.Delay Game.Data 100
+execute unless score State.SaveCooldown Game.Data matches -2147483648..2147483647 run scoreboard players set State.SaveCooldown Game.Data 36000
+execute unless score Battle.Seed Game.Data matches -2147483648..2147483647 run scoreboard players set Battle.Seed Game.Data 0
+execute unless score Battle.Buy_Timer Game.Data matches -2147483648..2147483647 run scoreboard players set Battle.Buy_Timer Game.Data 2400
+execute unless score Battle.Survive_Timer Game.Data matches -2147483648..2147483647 run scoreboard players set Battle.Survive_Timer Game.Data 3600
+execute unless score Battle.SpawnRate Game.Data matches -2147483648..2147483647 run scoreboard players set Battle.SpawnRate Game.Data 600
 scoreboard objectives add Dev_World trigger
 scoreboard objectives add Game_Scape trigger
 scoreboard objectives add Retrive_Life trigger

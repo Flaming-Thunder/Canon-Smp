@@ -1,0 +1,1 @@
+$execute at @e[type=marker,tag=Battle.Spawner,tag=Battle.$(spawner),limit=1,sort=random] run function game:system/game/battle/summon/$(id)

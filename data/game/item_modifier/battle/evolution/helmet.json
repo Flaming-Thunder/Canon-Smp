@@ -1,0 +1,69 @@
+[
+    
+    {
+      "function": "minecraft:set_item",
+      "item": "minecraft:leather_helmet",
+      "conditions": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "equipment": {
+              "head": {
+                "items": "air"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "function": "minecraft:set_item",
+      "item": "minecraft:chainmail_helmet",
+      "conditions": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "equipment": {
+              "head": {
+                "items": "minecraft:leather_helmet"
+              }
+            }
+          }
+        }
+      ]
+    },{
+      "function": "minecraft:set_item",
+      "item": "minecraft:iron_helmet",
+      "conditions": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "equipment": {
+              "head": {
+                "items": "minecraft:chainmail_helmet"
+              }
+            }
+          }
+        }
+      ]
+    },{
+      "function": "minecraft:set_item",
+      "item": "minecraft:diamond_helmet",
+      "conditions": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "equipment": {
+              "head": {
+                "items": "minecraft:iron_helmet"
+              }
+            }
+          }
+        }
+      ]
+    }
+]

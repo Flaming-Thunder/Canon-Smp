@@ -1,0 +1,2 @@
+execute unless score Battle.Survive Game.Timer matches 0 run data modify storage game:game_scape_data battle.round append from storage game:game_scape_data battle.round[0]
+function game:system/game/battle/wave/summon

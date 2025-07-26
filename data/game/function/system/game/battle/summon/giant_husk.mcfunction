@@ -1,0 +1,1 @@
+summon husk ~ ~ ~ {Tags:["Battle.Enemy"],attributes:[{id:"scale",base:3},{id:"max_health",base:50}]}

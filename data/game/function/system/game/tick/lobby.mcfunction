@@ -1,0 +1,1 @@
+execute in game:game_scape at @e[type=marker,tag=GameScape.Lobby,limit=1] run tp @s ~ ~ ~ ~ ~ function game:system/game/tick/internal0

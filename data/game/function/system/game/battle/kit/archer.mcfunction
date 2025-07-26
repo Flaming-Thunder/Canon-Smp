@@ -1,0 +1,3 @@
+function game:system/game/battle/kit/base
+item replace entity @s armor.feet with arrow[custom_data={"Price":0},unbreakable={},tooltip_display={hidden_components:["enchantments"]},equippable={asset_id:"leather_boots",slot:"feet"},item_model="leather_boots",item_name={text:"Archer Boots"},rarity="rare",attribute_modifiers=[{type:"armor",id:"archer_boots",amount:1,operation:"add_value"},{type:"movement_speed",id:"archer_boots",amount:0.2,operation:"add_multiplied_base"}],enchantments={"binding_curse":1}]
+item replace entity @s hotbar.1 with bow[custom_data={"Price":0},unbreakable={},enchantments={infinity:1},tooltip_display={hidden_components:["enchantments"]}]

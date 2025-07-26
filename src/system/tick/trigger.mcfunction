@@ -39,19 +39,23 @@ execute as @a at @s if score @s Game_Scape matches 1.. run
 
   execute if score .InGameScape Game.Math matches 0 run
     execute unless entity @s[advancements={game:check/game_scape_join=true}] run
-      execute in game:game_scape run tp @s 0 100 0
-      clear @s
+      function game:system/game/tick/lobby/tp
       advancement grant @s only game:check/game_scape_join
-
 
       function game:api/state/save {dim:"game_scape"}
 
     function game:api/state/load {dim:"game_scape"}
+    function game:system/util/update_bosssbar
+
+    execute if entity @s[advancements={game:check/in_battle=true}] unless score Battle.Ongoing Game.Data matches 1 run function game:system/game/battle/tick/lobby/tp
+    execute if entity @s[advancements={game:check/in_mining=true}] unless score Mining.Ongoing Game.Data matches 1 run function game:system/game/mining/tick/lobby/tp
+
 
 
   execute if score .InGameScape Game.Math matches 1 run
     function game:api/state/save {dim:"game_scape"}
     function game:api/state/load {dim:"main"}
+    bossbar set game:canon_event players @s
 #END
 
 
@@ -71,17 +75,16 @@ execute as @a at @s if score @s Dev_World matches 1.. run
       clear @s
       gamemode creative
       advancement grant @s only game:check/dev_world_join
-      
-
 
       function game:api/state/save {dim:"dev_world"}
 
     function game:api/state/load {dim:"dev_world"}
-
+    function game:system/util/update_bosssbar
 
   execute if score .InDevWorld Game.Math matches 1 run
     function game:api/state/save {dim:"dev_world"}
     function game:api/state/load {dim:"main"}
+    bossbar set game:canon_event players @s
 
 #END
 

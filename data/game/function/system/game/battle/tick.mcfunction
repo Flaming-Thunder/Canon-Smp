@@ -1,0 +1,1 @@
+execute if score Battle.Ongoing Game.Data matches 1 run function game:system/game/battle/tick/ongoing

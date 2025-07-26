@@ -1,0 +1,1 @@
+execute at @a as @e[distance=..20,type=#game:blood_moonable] unless entity @s[nbt={data:{Data:{ Blood_Mooned: 1b }}}] at @s run function game:system/world/blood_moon/internal0

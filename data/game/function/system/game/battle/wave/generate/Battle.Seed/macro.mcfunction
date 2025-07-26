@@ -1,0 +1,3 @@
+$execute store result score .$(id)$(count) Game.Battle.Weight run function game:system/game/battle/weight_function/$(weight)
+$execute if score .$(id)$(count) Game.Battle.Weight matches ..0 run scoreboard players reset .$(id)$(count) Game.Battle.Weight
+$execute if score .$(id)$(count) Game.Battle.Weight matches 0.. run scoreboard players operation .total Game.Battle.Weight += .$(id)$(count) Game.Battle.Weight

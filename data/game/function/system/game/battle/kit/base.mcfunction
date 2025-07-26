@@ -1,0 +1,5 @@
+item replace entity @s armor.head with barrier[custom_data={"Price":0},item_model="air",unbreakable={},enchantments={"binding_curse":1},tooltip_display={hide_tooltip:true,hidden_components:["enchantments"]}]
+item replace entity @s armor.chest with leather_chestplate[custom_data={"Price":0},unbreakable={},enchantments={"binding_curse":1},tooltip_display={hidden_components:["enchantments"]}]
+item replace entity @s armor.legs with barrier[custom_data={"Price":0},item_model="air",unbreakable={},enchantments={"binding_curse":1},tooltip_display={hide_tooltip:true,hidden_components:["enchantments"]}]
+item replace entity @s armor.feet with leather_boots[custom_data={"Price":0},unbreakable={},enchantments={"binding_curse":1},tooltip_display={hidden_components:["enchantments"]}]
+item replace entity @s hotbar.0 with wooden_sword[custom_data={"Price":0},unbreakable={},tooltip_display={hidden_components:["enchantments"]}]

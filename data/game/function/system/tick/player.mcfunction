@@ -9,6 +9,6 @@ execute if data storage game:player myData.damage unless data storage game:playe
 execute if score @s Check.Player.Died matches 1.. run function game:system/tick/player/died
 data modify storage game:player myData.LastSelectedItem set from entity @s SelectedItem
 function game:system/load/player_data_save
-execute as @a[gamemode=!creative,gamemode=!spectator, tag= Vampirism] at @s if predicate game:role_specific/timer_10t if predicate game:role_specific/vampirism if dimension overworld run function game:system/tick/player/vampirism
+execute if entity @s[gamemode=!creative,gamemode=!spectator, tag=Vampirism] if predicate game:role_specific/timer_10t if predicate game:role_specific/vampirism if dimension overworld run function game:system/tick/player/vampirism
 execute as @a[gamemode=!creative,gamemode=!spectator, tag= Aquaphobic] if predicate game:role_specific/timer_5t run function game:system/tick/player/aquaphobic
 execute as @a if score @s Player.Lives matches 0 run function game:system/tick/player/ghostly

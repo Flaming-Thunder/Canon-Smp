@@ -47,7 +47,8 @@ execute on passengers if entity @s[type=interaction] run
 #END
 
 
-execute if score @s Altar.LockDelay matches 0 if data entity @s data.loot at @s positioned ~ ~4 ~ run %FILE%/craft_result with entity @s data
+execute if score @s Altar.LockDelay matches 0 if data entity @s data.loot at @s positioned ~ ~4 ~ if data entity @s data.loot run %FILE%/craft_result with entity @s data
+execute if score @s Altar.LockDelay matches 0 if data entity @s data.loot at @s positioned ~ ~4 ~ if data entity @s data.cmd run %FILE%/craft_function with entity @s data
 
 execute on passengers if entity @s[type=item_display] at @s run rotate @s ~2 ~
 
@@ -60,6 +61,10 @@ execute if score .temp0 Game.Math matches 0 run %FILE%/ambiant_particle
 
 /craft_result
   $loot spawn ~ ~ ~ loot $(loot)
+#END
+
+/craft_function
+  $$(cmd)
 #END
 
 /drop_item

@@ -11,4 +11,4 @@ data modify storage game:player myData.LastSelectedItem.Slot set value 0b
 data modify block 0 0 0 Items append from storage game:player myData.LastSelectedItem
 item replace entity @s weapon.mainhand from block 0 0 0 container.0 game:item/damage
 setblock 0 0 0 air
-execute if score .damage Game.Math matches ..0 run function game:system/tick/rune/break with storage game:math temp.item
+execute if score .damage Game.Math matches ..0 run function game:system/tick/rune/break

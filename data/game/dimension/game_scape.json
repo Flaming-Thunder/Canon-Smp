@@ -1,5 +1,5 @@
 {
-  "type": "game:dev_world",
+  "type": "game:game_scape",
   "generator": {
     "type": "minecraft:flat",
     "settings": {

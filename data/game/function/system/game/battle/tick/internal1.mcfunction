@@ -1,0 +1,1 @@
+advancement grant @s only game:check/in_battle

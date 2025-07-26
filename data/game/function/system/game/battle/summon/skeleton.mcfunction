@@ -1,0 +1,1 @@
+summon skeleton ~ ~ ~ {Tags:["Battle.Enemy"],equipment:{head:{id:"leather_helmet"}},drop_chances:{head:0f}}

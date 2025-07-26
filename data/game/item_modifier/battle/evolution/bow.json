@@ -1,0 +1,116 @@
+[
+    {
+      "function": "minecraft:set_enchantments",
+      "enchantments":{
+        "power":3
+      },
+      "conditions": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          
+          "predicate": {
+            "equipment": {
+              "mainhand": {
+                "items": "minecraft:bow",
+                "components": {
+                  "enchantments": {
+                    "power":2
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "function": "minecraft:set_enchantments",
+      "enchantments":{
+        "power":2
+      },
+      "conditions": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          
+          "predicate": {
+            "equipment": {
+              "mainhand": {
+                "items": "minecraft:bow",
+                "components": {
+                  "enchantments": {
+                    "power":1
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "function": "minecraft:set_enchantments",
+      "enchantments":{
+        "power":1
+      },
+      "conditions": [
+        {
+          "condition": "inverted",
+          "term":{
+            "condition":"any_of",
+            "terms":[
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "equipment": {
+                    "mainhand": {
+                      "items": "minecraft:bow",
+                      "components": {
+                        "enchantments": {
+                          "power":1
+                        }
+                      }
+                    }
+                  }
+                }  
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "equipment": {
+                    "mainhand": {
+                      "items": "minecraft:bow",
+                      "components": {
+                        "enchantments": {
+                          "power":2
+                        }
+                      }
+                    }
+                  }
+                }  
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "equipment": {
+                    "mainhand": {
+                      "items": "minecraft:bow",
+                      "components": {
+                        "enchantments": {
+                          "power":3
+                        }
+                      }
+                    }
+                  }
+                }  
+              }
+            ]
+          }
+        }
+      ]
+    }
+]

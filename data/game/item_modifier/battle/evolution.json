@@ -1,0 +1,434 @@
+[
+    
+  {
+    "function": "minecraft:filtered",
+    "item_filter": {
+      "components": {
+        "item_model": "air",
+        "custom_data": {"Armor":"feet"}
+      }
+    },
+    "modifier": [
+        {
+          "function": "set_item",
+          "item": "leather_boots"
+        },
+        {
+          "function": "set_custom_data",
+          "tag": {"Price":0}
+        },
+        {
+          "function": "set_components",
+          "components": {
+            "tooltip_display": {
+                "hide_tooltip": false
+            }
+          }
+        }
+      ]
+    },{
+    "function": "minecraft:filtered",
+    "item_filter": {
+      "items": "leather_boots"
+    },
+    "modifier": [
+        {
+          "function": "set_item",
+          "item": "chainmail_boots"
+        },
+        {
+          "function": "set_custom_data",
+          "tag": {"Price":0}
+        }
+      ]
+    },
+    {
+    "function": "minecraft:filtered",
+    "item_filter": {
+      "items": "chainmail_boots"
+    },
+    "modifier": [
+        {
+          "function": "set_item",
+          "item": "iron_boots"
+        },
+        {
+          "function": "set_custom_data",
+          "tag": {"Price":0}
+        }
+      ]
+    },
+    {
+    "function": "minecraft:filtered",
+    "item_filter": {
+      "items": "iron_boots"
+    },
+    "modifier": [
+        {
+          "function": "set_item",
+          "item": "diamond_boots"
+        },
+        {
+          "function": "set_custom_data",
+          "tag": {"Price":0}
+        }
+      ]
+    },
+
+
+    {
+    "function": "minecraft:filtered",
+    "item_filter": {
+      "components": {
+        "item_model": "air",
+        "custom_data": {"Armor":"legs"}
+      }
+    },
+    "modifier": [
+        {
+          "function": "set_item",
+          "item": "leather_leggings"
+        },
+        {
+          "function": "set_custom_data",
+          "tag": {"Price":0}
+        },
+        {
+          "function": "set_components",
+          "components": {
+            "tooltip_display": {
+                "hide_tooltip": false
+            }
+          }
+        }
+      ]
+    },{
+    "function": "minecraft:filtered",
+    "item_filter": {
+      "items": "leather_leggings"
+    },
+    "modifier": [
+        {
+          "function": "set_item",
+          "item": "chainmail_leggings"
+        },
+        {
+          "function": "set_custom_data",
+          "tag": {"Price":0}
+        }
+      ]
+    },
+    {
+    "function": "minecraft:filtered",
+    "item_filter": {
+      "items": "chainmail_leggings"
+    },
+    "modifier": [
+        {
+          "function": "set_item",
+          "item": "iron_leggings"
+        },
+        {
+          "function": "set_custom_data",
+          "tag": {"Price":0}
+        }
+      ]
+    },
+    {
+    "function": "minecraft:filtered",
+    "item_filter": {
+      "items": "iron_leggings"
+    },
+    "modifier": [
+        {
+          "function": "set_item",
+          "item": "diamond_leggings"
+        },
+        {
+          "function": "set_custom_data",
+          "tag": {"Price":0}
+        }
+      ]
+    },
+
+    {
+    "function": "minecraft:filtered",
+    "item_filter": {
+      "components": {
+        "item_model": "air",
+        "custom_data": {"Armor":"chest"}
+      }
+    },
+    "modifier": [
+        {
+          "function": "set_item",
+          "item": "leather_chestplate"
+        },
+        {
+          "function": "set_custom_data",
+          "tag": {"Price":0}
+        },
+        {
+          "function": "set_components",
+          "components": {
+            "tooltip_display": {
+                "hide_tooltip": false
+            }
+          }
+        }
+      ]
+    },
+    {
+    "function": "minecraft:filtered",
+    "item_filter": {
+      "items": "leather_chestplate"
+    },
+    "modifier": [
+        {
+          "function": "set_item",
+          "item": "chainmail_chestplate"
+        },
+        {
+          "function": "set_custom_data",
+          "tag": {"Price":0}
+        }
+      ]
+    },
+    {
+    "function": "minecraft:filtered",
+    "item_filter": {
+      "items": "chainmail_chestplate"
+    },
+    "modifier": [
+        {
+          "function": "set_item",
+          "item": "iron_chestplate"
+        },
+        {
+          "function": "set_custom_data",
+          "tag": {"Price":0}
+        }
+      ]
+    },
+    {
+    "function": "minecraft:filtered",
+    "item_filter": {
+      "items": "iron_chestplate"
+    },
+    "modifier": [
+        {
+          "function": "set_item",
+          "item": "diamond_chestplate"
+        },
+        {
+          "function": "set_custom_data",
+          "tag": {"Price":0}
+        }
+      ]
+    },
+
+
+    {
+    "function": "minecraft:filtered",
+    "item_filter": {
+      "components": {
+        "item_model": "air",
+        "custom_data": {"Armor":"head"}
+      }
+    },
+    "modifier": [
+        {
+          "function": "set_item",
+          "item": "leather_helmet"
+        },
+        {
+          "function": "set_custom_data",
+          "tag": {"Price":0}
+        },
+        {
+          "function": "set_components",
+          "components": {
+            "tooltip_display": {
+                "hide_tooltip": false
+            }
+          }
+        }
+      ]
+    },
+    {
+    "function": "minecraft:filtered",
+    "item_filter": {
+      "items": "leather_helmet"
+    },
+    "modifier": [
+        {
+          "function": "set_item",
+          "item": "chainmail_helmet"
+        },
+        {
+          "function": "set_custom_data",
+          "tag": {"Price":0}
+        }
+      ]
+    },
+    {
+    "function": "minecraft:filtered",
+    "item_filter": {
+      "items": "chainmail_helmet"
+    },
+    "modifier": [
+        {
+          "function": "set_item",
+          "item": "iron_helmet"
+        },
+        {
+          "function": "set_custom_data",
+          "tag": {"Price":0}
+        }
+      ]
+    },
+    {
+    "function": "minecraft:filtered",
+    "item_filter": {
+      "items": "iron_helmet"
+    },
+    "modifier": [
+        {
+          "function": "set_item",
+          "item": "diamond_helmet"
+        },
+        {
+          "function": "set_custom_data",
+          "tag": {"Price":0}
+        }
+      ]
+    },
+
+    
+
+
+    {
+    "function": "minecraft:filtered",
+    "item_filter": {
+      "items": "wooden_sword"
+    },
+    "modifier": [
+        {
+          "function": "set_item",
+          "item": "stone_sword"
+        },
+        {
+          "function": "set_custom_data",
+          "tag": {"Price":0}
+        }
+      ]
+    },{
+    "function": "minecraft:filtered",
+    "item_filter": {
+      "items": "stone_sword"
+    },
+    "modifier": [
+        {
+          "function": "set_item",
+          "item": "iron_sword"
+        },
+        {
+          "function": "set_custom_data",
+          "tag": {"Price":0}
+        }
+      ]
+    },{
+    "function": "minecraft:filtered",
+    "item_filter": {
+      "items": "iron_sword"
+    },
+    "modifier": [
+        {
+          "function": "set_item",
+          "item": "diamond_sword"
+        },
+        {
+          "function": "set_custom_data",
+          "tag": {"Price":0}
+        }
+      ]
+    },
+
+
+    {
+    "function": "minecraft:filtered",
+    "item_filter": {
+      "items": "bow",
+      "predicates": {
+        "minecraft:enchantments": [
+          {
+            "enchantments": "minecraft:power",
+            "levels":1
+          }
+        ]
+      }
+      },
+    "modifier": [
+        {
+          "function": "set_custom_data",
+          "tag": {"Price":0}
+        }
+      ]
+    },
+    {
+    "function": "minecraft:filtered",
+    "item_filter": {
+      "items": "bow",
+      "predicates": {
+        "minecraft:enchantments": [
+          {
+            "enchantments": "minecraft:power",
+            "levels":2
+          }
+        ]
+      }
+      },
+    "modifier": [
+        {
+          "function": "set_custom_data",
+          "tag": {"Price":0}
+        }
+      ]
+    },
+    {
+    "function": "minecraft:filtered",
+    "item_filter": {
+      "items": "bow",
+      "predicates": {
+        "minecraft:enchantments": [
+          {
+            "enchantments": "minecraft:power",
+            "levels":3
+          }
+        ]
+      }
+      },
+    "modifier": [
+        {
+          "function": "set_custom_data",
+          "tag": {"Price":0}
+        }
+      ]
+    },
+    {
+    "function": "minecraft:filtered",
+    "item_filter": {
+      "items": "bow"
+      },
+    "modifier": [
+        {
+          "function": "set_enchantments",
+          "enchantments": {
+            "power":1
+          },
+          "add":true
+        }
+      ]
+    }
+    
+]

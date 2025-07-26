@@ -15,11 +15,9 @@
   data modify block 0 0 0 Items append from storage game:player myData.LastSelectedItem
   item replace entity @s weapon.mainhand from block 0 0 0 container.0 game:item/damage
   setblock 0 0 0 air
-  execute if score .damage Game.Math matches ..0 run %FILE%/break with storage game:math temp.item
+  execute if score .damage Game.Math matches ..0 run %FILE%/break
 #END
 /break
-  $execute anchored eyes run particle item{item:{id:"nether_star",components:{"minecraft:item_model":"$(item_model)","minecraft:custom_model_data":$(custom_model_data)}}} ^-0.5 ^ ^0.5 0 0 0 0.1 5 normal @s
-  
   playsound entity.item.break player @s ~ ~ ~ 0.5 1 0
   
   item replace entity @s weapon.mainhand with air

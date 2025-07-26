@@ -1,0 +1,4 @@
+data modify storage buttons:storage temp.temp set from storage buttons:storage temp.slot
+execute store result score .temp0 buttons.main run data modify storage buttons:storage temp.temp set from entity @s data.slot
+execute if score .temp0 buttons.main matches 0 run return 1
+

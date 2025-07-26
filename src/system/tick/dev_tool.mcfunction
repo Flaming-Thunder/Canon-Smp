@@ -1,4 +1,30 @@
+/freeze
+  advancement revoke @s only game:use_devs/freeze
+	execute at @s anchored eyes positioned ^ ^ ^3 positioned ~-.5 ~-.5 ~-.5 as @p[dx=0] run
 
+		execute store result score .temp1 Game.Math if entity @s[tag=Dev.Freeze]
+
+		execute if score .temp1 Game.Math matches 0 run
+			attribute @s jump_strength modifier add freeze -10000 add_value
+			attribute @s movement_speed modifier add freeze -10000 add_value
+			attribute @s block_interaction_range modifier add freeze -10000 add_value
+			attribute @s entity_interaction_range modifier add freeze -10000 add_value
+			tag @s add Dev.Freeze
+
+			execute at @s run particle wax_off ~ ~1 ~ 0.5 1 0.5 0.1 20 normal
+		#END
+		
+		execute if score .temp1 Game.Math matches 1 run
+			attribute @s jump_strength modifier remove freeze
+			attribute @s movement_speed modifier remove freeze
+			attribute @s block_interaction_range modifier remove freeze
+			attribute @s entity_interaction_range modifier remove freeze
+			tag @s remove Dev.Freeze
+
+			execute at @s run particle wax_on ~ ~1 ~ 0.5 1 0.5 0.1 20 normal
+
+		#END
+	#END
 
 
 /invsee

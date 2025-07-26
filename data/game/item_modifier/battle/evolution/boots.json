@@ -1,0 +1,69 @@
+[
+
+    {
+      "function": "minecraft:set_item",
+      "item": "minecraft:leather_boots",
+      "conditions": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "equipment": {
+              "feet": {
+                "items": "air"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "function": "minecraft:set_item",
+      "item": "minecraft:chainmail_boots",
+      "conditions": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "equipment": {
+              "feet": {
+                "items": "minecraft:leather_boots"
+              }
+            }
+          }
+        }
+      ]
+    },{
+      "function": "minecraft:set_item",
+      "item": "minecraft:iron_boots",
+      "conditions": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "equipment": {
+              "feet": {
+                "items": "minecraft:chainmail_boots"
+              }
+            }
+          }
+        }
+      ]
+    },{
+      "function": "minecraft:set_item",
+      "item": "minecraft:diamond_boots",
+      "conditions": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "equipment": {
+              "feet": {
+                "items": "minecraft:iron_boots"
+              }
+            }
+          }
+        }
+      ]
+    }
+]

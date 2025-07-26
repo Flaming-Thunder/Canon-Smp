@@ -1,0 +1,69 @@
+[
+    
+    {
+      "function": "minecraft:set_item",
+      "item": "minecraft:leather_chestplate",
+      "conditions": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "equipment": {
+              "chest": {
+                "items": "air"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "function": "minecraft:set_item",
+      "item": "minecraft:chainmail_chestplate",
+      "conditions": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "equipment": {
+              "chest": {
+                "items": "minecraft:leather_chestplate"
+              }
+            }
+          }
+        }
+      ]
+    },{
+      "function": "minecraft:set_item",
+      "item": "minecraft:iron_chestplate",
+      "conditions": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "equipment": {
+              "chest": {
+                "items": "minecraft:chainmail_chestplate"
+              }
+            }
+          }
+        }
+      ]
+    },{
+      "function": "minecraft:set_item",
+      "item": "minecraft:diamond_chestplate",
+      "conditions": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "equipment": {
+              "chest": {
+                "items": "minecraft:iron_chestplate"
+              }
+            }
+          }
+        }
+      ]
+    }
+]

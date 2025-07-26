@@ -130,6 +130,7 @@ execute if score Craft.Success Game.Math matches 0 run %FILE%/fail
 
 /success
   data modify entity @s data.loot set from storage game:math temp.array[0].result_table
+  data modify entity @s data.cmd set from storage game:math temp.array[0].result_command
   data modify storage game:math temp.Pos set from entity @s Pos
   
   execute store result score .y Game.Math run data get entity @s Pos[1] 100

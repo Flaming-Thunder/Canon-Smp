@@ -10,16 +10,21 @@
             {
               "function": "set_components",
               "components": {
-                "item_model": "beetroot",
+                "item_model": "game:resource/life_token",
                 "item_name": "Golden Life Token",
                 "rarity": "rare",
                 
                 "enchantment_glint_override": true,
                 "max_stack_size": 10,
                 
+                "custom_model_data": {
+                  "strings": [
+                    "Golden"
+                  ]
+                },
                 "custom_data": {
                   "Data": {
-                    "Custom_Item": "Golden Life Token"
+                    "Custom_Item": "Normal"
                   }
                 },
                 

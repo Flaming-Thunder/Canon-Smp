@@ -1,3 +1,9 @@
+
+summon marker ~ ~ ~ {Tags:["Game.Math"]}
+
+
+
+
 execute as @a run scoreboard players enable @s Retrive_Life
 execute as @a run scoreboard players enable @s Check_Event_Time
 execute as @a run scoreboard players enable @s Dev_World
@@ -6,7 +12,6 @@ execute as @a[tag=Developer] run scoreboard players enable @s Game_Scape
 function game:system/tick/trigger
 
 
-summon marker ~ ~ ~ {Tags:["Game.Math"]}
 function game:system/world/canon_event
 
 execute as @a[tag=!Game.PlayerInited] run function game:system/load/player_id
@@ -76,7 +81,7 @@ execute as @e[type=item_display,tag=Magic.Inferno] at @s run function game:syste
     execute if entity @s[tag=Magic.Frightener] run data remove storage game:player myData.effects.Frightener
     execute if entity @s[tag=Magic.Frightener] run tag @s remove Magic.Frightener
 
-    execute if data storage game:data {Data:{Event:{CanonEvent:3b}}} run
+    execute if data storage game:data {Data:{Event:{CanonEvent:3b}}} if predicate game:dimension/main run
       scoreboard players remove @s Player.Lives 1
       function game:api/player_update
       scoreboard players add Event.Canon.Deaths Game.Data 1
@@ -90,16 +95,19 @@ execute as @e[type=item_display,tag=Magic.Inferno] at @s run function game:syste
 
   ##                                       -PLAYER DEBUFFS-
 
-  execute as @a[gamemode=!creative,gamemode=!spectator, tag= Vampirism] at @s if predicate game:role_specific/timer_10t if predicate game:role_specific/vampirism if dimension overworld run %FILE%/player/vampirism
+  execute if entity @s[gamemode=!creative,gamemode=!spectator, tag=Vampirism] if predicate game:role_specific/timer_10t if predicate game:role_specific/vampirism if dimension overworld run %FILE%/player/vampirism
   /vampirism
+    scoreboard players add @s Player.Helmet_Breaking 0
+    +
+    
     execute if score @s Player.Helmet_Breaking matches 1.. unless entity @s[nbt={equipment:{head:{components:{"minecraft:enchantments":{"minecraft:unbreaking":3}}}}}] if entity @s[nbt={equipment:{head:{}}}] run scoreboard players remove @s Player.Helmet_Breaking 4
     execute if entity @s[nbt={equipment:{head:{components:{"minecraft:enchantments":{"minecraft:unbreaking":1}}}}}] run scoreboard players add @s Player.Helmet_Breaking 2
     execute if entity @s[nbt={equipment:{head:{components:{"minecraft:enchantments":{"minecraft:unbreaking":2}}}}}] run scoreboard players add @s Player.Helmet_Breaking 3
 
-    execute if score @s Player.Helmet_Breaking matches -5..0 run
+    execute if score @s Player.Helmet_Breaking matches -10..0 run
       function game:system/util/damage_helmet
       execute unless items entity @s armor.head * run damage @s 4 on_fire
-    #END
+    ##END
   #END
   execute as @a[gamemode=!creative,gamemode=!spectator, tag= Aquaphobic] if predicate game:role_specific/timer_5t run %FILE%/player/aquaphobic
   /aquaphobic
@@ -109,7 +117,6 @@ execute as @e[type=item_display,tag=Magic.Inferno] at @s run function game:syste
     execute if block ~ ~ ~ water_cauldron run %FILE%/player/aquaphobic/in_water
     execute if block ~ ~ ~ water run %FILE%/player/aquaphobic/in_water
     /in_water
-      #playsound minecraft:entity.player.hurt_on_fire ambient @a ~ ~ ~ 1 1 0
       damage @s 1 on_fire
     #END
   #END
@@ -128,9 +135,12 @@ execute as @e[type=item_display,tag=Magic.Inferno] at @s run function game:syste
 #END
 
 
+execute store result score .gametime Game.Math run time query gametime
+
+scoreboard players operation .gametime Game.Math %= State.SaveCooldown Game.Data
+execute if score .gametime Game.Math matches 0 as @a run function game:api/state/backup
 
 
-kill @e[type=marker,tag=Game.Math]
 
 kill @e[type=arrow,tag=Magic.Fire,tag=Magic.ToDelete]
 tag @e[type=arrow,tag=Magic.Fire] add Magic.ToDelete
@@ -139,8 +149,4 @@ tag @e[type=arrow,tag=Magic.Fire] add Magic.ToDelete
 clear @a[tag=!Developer] *[custom_data~{DevTool:true}]
 
 
-execute store result score .gametime Game.Math run time query gametime
-
-scoreboard players operation .gametime Game.Math %= State.SaveCooldown Game.Data
-execute if score .gametime Game.Math matches 0 as @a run function game:api/state/backup
-
+kill @e[type=marker,tag=Game.Math]

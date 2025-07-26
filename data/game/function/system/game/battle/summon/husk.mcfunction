@@ -1,0 +1,1 @@
+summon husk ~ ~ ~ {Tags:["Battle.Enemy"]}

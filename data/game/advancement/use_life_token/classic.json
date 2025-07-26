@@ -5,9 +5,14 @@
       "conditions": {
         "item": {
           "components": {
+            "custom_model_data": {
+              "strings": [
+                "Classic"
+              ]
+            },
             "custom_data": {
               "Data": {
-                "Custom_Item": "Life Token"
+                "Custom_Item": "Normal"
               }
             }
           }
